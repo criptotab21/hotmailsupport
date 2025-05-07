@@ -1,0 +1,227 @@
+   body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #e0e0e0;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 222px;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header img {
+            width: 100px; /* Reducción del tamaño del logo para móviles */
+        }
+
+        .content {
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            background-color: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            border: 3px solid black;
+
+
+        }
+
+
+
+        .content h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .content form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        select, input[type="tel"] {
+            padding: 12px; /* Reducción del tamaño del padding */
+            font-size: 1rem;
+            border: none;
+            border-radius: 25px ;
+            margin-bottom: 15px;
+            text-align: center;
+            outline: none;
+            background-color: #f0f0f0;
+        }
+
+        input[type="tel"]::placeholder {
+            color: #999;
+        }
+
+
+select, input[type="email"] {
+            padding: 12px; /* Reducción del tamaño del padding */
+            font-size: 1rem;
+            border: none;
+            border-radius: 25px ;
+            margin-bottom: 15px;
+            text-align: center;
+            outline: none;
+            background-color: #f0f0f0;
+        }
+
+        input[type="email"]::placeholder {
+            color: #999;
+        }
+
+        select, input[type="password"] {
+            padding: 12px; /* Reducción del tamaño del padding */
+            font-size: 1rem;
+            border: none;
+            border-radius: 25px ;
+            margin-bottom: 15px;
+            text-align: center;
+            outline: none;
+            background-color: #f0f0f0;
+        }
+
+        input[type="password"]::placeholder {
+            color: #999;
+        }
+
+
+
+
+        button {
+            padding: 12px; /* Ajuste de tamaño del botón */
+            font-size: 0.9rem; /* Reducción del tamaño de fuente */
+            color: #fff;
+            background-color: #075E54;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            background-color: #128C7E;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer img {
+            width: 60px; /* Ajuste del tamaño del logo en el footer */
+        }
+
+        #popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #popup .popup-content {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            color: #333;
+            max-width: 350px;
+            width: 90%;
+        }
+
+        #popup .popup-content h2 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        #popup .popup-content p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        #popup .popup-content img {
+            width: 50px;
+            height: 50px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                height: 180px; /* Ajuste en altura para móviles */
+            }
+
+            .content h1 {
+                font-size: 1.8rem;
+            }
+
+            .content p {
+                font-size: 1rem;
+            }
+
+            input[type="tel"] {
+                font-size: 0.9rem;
+                padding: 12px;
+            }
+
+              input[type="email"] {
+                font-size: 0.9rem;
+                padding: 12px;
+            }
+
+              input[type="password"] {
+                font-size: 0.9rem;
+                padding: 12px;
+            }
+
+            button {
+                font-size: 0.85rem; /* Reducción del tamaño de fuente del botón */
+                padding: 12px;
+            }
+
+            footer img {
+                width: 50px; /* Reducción de tamaño en el footer para móviles */
+            }
+
+            #popup .popup-content h2 {
+                font-size: 1.4rem;
+            }
+        }
